@@ -19,7 +19,7 @@ export default function GeneratorPage() {
     };
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 p-4">
+        <div className="min-h-screen flex flex-col items-center justify-center bg-linear-to-r from-purple-400 via-pink-400 to-red-400 p-4">
             <div className="bg-white bg-opacity-80 backdrop-blur-md p-8 rounded-2xl shadow-xl w-96 text-gray-800">
                 <h1 className="text-2xl font-bold mb-6 text-center text-gray-900">
                     🎲 Random Number Generator
@@ -32,7 +32,7 @@ export default function GeneratorPage() {
 
                 <button
                     onClick={generateRandom}
-                    className="w-full py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transform transition"
+                    className="w-full py-3 bg-linear-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transform transition"
                 >
                     Generate
                 </button>
