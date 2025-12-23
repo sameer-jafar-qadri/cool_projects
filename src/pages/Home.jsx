@@ -1,11 +1,13 @@
 
 import { useNavigate } from "react-router-dom";
+import Header from "../components/Header/Header";
 
 export default function Home() {
     const navigate = useNavigate();
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 text-white">
+            <Header/>
             <h1 className="text-4xl font-bold mb-6">Welcome to the Utility App</h1>
             <p className="mb-6 text-center text-lg max-w-md">
                 Click the button below to go to the Random Number Generator.
