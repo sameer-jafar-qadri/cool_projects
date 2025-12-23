@@ -24,7 +24,7 @@ export default function GeneratorPage() {
                 <h1 className="text-2xl font-bold mb-6 text-center text-gray-900">
                     🎲 Random Number Generator
                 </h1>
-
+                <ResultDisplay result={result} />
                 <div className="flex flex-col gap-4 mb-6">
                     <Input value={min} onChange={setMin} placeholder="Min" />
                     <Input value={max} onChange={setMax} placeholder="Max" />
@@ -37,7 +37,7 @@ export default function GeneratorPage() {
                     Generate
                 </button>
 
-                <ResultDisplay result={result} />
+               
 
                 <button
                     onClick={() => navigate("/")}
