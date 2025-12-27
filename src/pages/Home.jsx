@@ -1,7 +1,6 @@
 
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header/Header";
-
 export default function Home() {
     const navigate = useNavigate();
 
@@ -20,8 +19,15 @@ export default function Home() {
                 >
                     Go to Random Number Generator
                 </button>
+                <button
+                    onClick={() => navigate("/medicine")}
+                    className="px-6 py-3 bg-white text-green-600 font-semibold rounded-xl shadow-lg hover:scale-105 transform transition"
+                >
+                    Go to Random Number Generator
+                </button>
             </div>
 
         </>
             );
 }
+ḥ
